@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200407 10:12:42.469" rpa="false">
+<suite id="s1" name="Realizar Compra" source="C:\qaninja\robot\pratica\realizar_compra.robot">
+<test id="s1-t1" name="Realizar Compra">
+<kw name="Nova sessão" library="basic" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200407 10:12:43.281" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com'.</msg>
+<status status="PASS" starttime="20200407 10:12:43.281" endtime="20200407 10:12:56.578"></status>
+</kw>
+<status status="PASS" starttime="20200407 10:12:43.281" endtime="20200407 10:12:56.578"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<msg timestamp="20200407 10:12:56.580" level="INFO">Opening url 'http://automationpractice.com'</msg>
+<status status="PASS" starttime="20200407 10:12:56.579" endtime="20200407 10:12:59.377"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:12:59.980" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-437.png"&gt;&lt;img src="selenium-screenshot-437.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:12:59.377" endtime="20200407 10:12:59.981"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:login</arg>
+</arguments>
+<msg timestamp="20200407 10:12:59.983" level="INFO">Clicking element 'class:login'.</msg>
+<status status="PASS" starttime="20200407 10:12:59.983" endtime="20200407 10:13:02.445"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200407 10:13:04.456" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:02.448" endtime="20200407 10:13:04.456"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:04.810" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-438.png"&gt;&lt;img src="selenium-screenshot-438.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:04.456" endtime="20200407 10:13:04.810"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Already registered?</arg>
+</arguments>
+<msg timestamp="20200407 10:13:04.841" level="INFO">Current page contains text 'Already registered?'.</msg>
+<status status="PASS" starttime="20200407 10:13:04.810" endtime="20200407 10:13:04.841"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>rotot.test@teste.com</arg>
+</arguments>
+<msg timestamp="20200407 10:13:04.841" level="INFO">Typing text 'rotot.test@teste.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20200407 10:13:04.841" endtime="20200407 10:13:05.438"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>passwd</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200407 10:13:05.439" level="INFO">Typing text '123456' into text field 'passwd'.</msg>
+<status status="PASS" starttime="20200407 10:13:05.439" endtime="20200407 10:13:05.601"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:05.977" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-439.png"&gt;&lt;img src="selenium-screenshot-439.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:05.603" endtime="20200407 10:13:05.977"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id:SubmitLogin</arg>
+</arguments>
+<msg timestamp="20200407 10:13:05.978" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20200407 10:13:05.978" endtime="20200407 10:13:08.524"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200407 10:13:10.543" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:08.525" endtime="20200407 10:13:10.543"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>My account</arg>
+</arguments>
+<msg timestamp="20200407 10:13:10.589" level="INFO">Current page contains text 'My account'.</msg>
+<status status="PASS" starttime="20200407 10:13:10.543" endtime="20200407 10:13:10.589"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[title="Women"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:10.589" level="INFO">Clicking element 'css=a[title="Women"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:10.589" endtime="20200407 10:13:13.872"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Women</arg>
+</arguments>
+<msg timestamp="20200407 10:13:13.904" level="INFO">Current page contains text 'Women'.</msg>
+<status status="PASS" starttime="20200407 10:13:13.873" endtime="20200407 10:13:13.904"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20200407 10:13:15.914" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:13.905" endtime="20200407 10:13:15.914"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[data-id-product="1"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:15.914" level="INFO">Clicking element 'css=a[data-id-product="1"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:15.914" endtime="20200407 10:13:16.054"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:16.402" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-440.png"&gt;&lt;img src="selenium-screenshot-440.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:16.055" endtime="20200407 10:13:16.402"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:19.411" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:16.402" endtime="20200407 10:13:19.411"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Product successfully added to your shopping cart</arg>
+</arguments>
+<msg timestamp="20200407 10:13:19.458" level="INFO">Current page contains text 'Product successfully added to your shopping cart'.</msg>
+<status status="PASS" starttime="20200407 10:13:19.411" endtime="20200407 10:13:19.458"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=span[title="Continue shopping"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:19.458" level="INFO">Clicking element 'css=span[title="Continue shopping"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:19.458" endtime="20200407 10:13:19.537"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:19.985" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-441.png"&gt;&lt;img src="selenium-screenshot-441.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:19.537" endtime="20200407 10:13:19.985"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20200407 10:13:25.000" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:19.985" endtime="20200407 10:13:25.000"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#block_top_menu &gt; ul &gt; li:nth-child(3) &gt; a</arg>
+</arguments>
+<msg timestamp="20200407 10:13:25.000" level="INFO">Clicking element 'css=#block_top_menu &gt; ul &gt; li:nth-child(3) &gt; a'.</msg>
+<status status="PASS" starttime="20200407 10:13:25.000" endtime="20200407 10:13:27.599"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:28.017" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-442.png"&gt;&lt;img src="selenium-screenshot-442.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:27.600" endtime="20200407 10:13:28.017"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:31.026" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:28.018" endtime="20200407 10:13:31.026"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[style="background:#5D9CEC;"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:31.026" level="INFO">Clicking element 'css=a[style="background:#5D9CEC;"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:31.026" endtime="20200407 10:13:33.988"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:34.378" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-443.png"&gt;&lt;img src="selenium-screenshot-443.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:33.989" endtime="20200407 10:13:34.379"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:37.384" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:34.380" endtime="20200407 10:13:37.384"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Faded Short Sleeve T-shirts</arg>
+</arguments>
+<msg timestamp="20200407 10:13:37.431" level="INFO">Current page contains text 'Faded Short Sleeve T-shirts'.</msg>
+<status status="PASS" starttime="20200407 10:13:37.384" endtime="20200407 10:13:37.431"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class:product_quantity_up</arg>
+</arguments>
+<msg timestamp="20200407 10:13:37.431" level="INFO">Clicking element 'class:product_quantity_up'.</msg>
+<status status="PASS" starttime="20200407 10:13:37.431" endtime="20200407 10:13:37.549"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:37.937" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-444.png"&gt;&lt;img src="selenium-screenshot-444.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:37.550" endtime="20200407 10:13:37.937"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name:Submit</arg>
+</arguments>
+<msg timestamp="20200407 10:13:37.937" level="INFO">Clicking button 'name:Submit'.</msg>
+<status status="PASS" starttime="20200407 10:13:37.937" endtime="20200407 10:13:38.056"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:38.492" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-445.png"&gt;&lt;img src="selenium-screenshot-445.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:38.057" endtime="20200407 10:13:38.493"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:41.496" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:38.493" endtime="20200407 10:13:41.496"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[title="Proceed to checkout"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:41.496" level="INFO">Clicking element 'css=a[title="Proceed to checkout"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:41.496" endtime="20200407 10:13:43.439"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:43.840" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-446.png"&gt;&lt;img src="selenium-screenshot-446.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:43.439" endtime="20200407 10:13:43.840"></status>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#block_top_menu &gt; ul &gt; li:nth-child(2) &gt; a</arg>
+</arguments>
+<status status="PASS" starttime="20200407 10:13:43.841" endtime="20200407 10:13:44.150"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:44.498" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-447.png"&gt;&lt;img src="selenium-screenshot-447.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:44.151" endtime="20200407 10:13:44.498"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#block_top_menu &gt; ul &gt; li:nth-child(2) &gt; ul &gt; li:nth-child(2) &gt; a</arg>
+</arguments>
+<msg timestamp="20200407 10:13:44.499" level="INFO">Clicking element 'css=#block_top_menu &gt; ul &gt; li:nth-child(2) &gt; ul &gt; li:nth-child(2) &gt; a'.</msg>
+<status status="PASS" starttime="20200407 10:13:44.499" endtime="20200407 10:13:46.309"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:46.726" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-448.png"&gt;&lt;img src="selenium-screenshot-448.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:46.310" endtime="20200407 10:13:46.726"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:49.744" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:46.729" endtime="20200407 10:13:49.744"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[data-id-product="4"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:49.744" level="INFO">Clicking element 'css=a[data-id-product="4"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:49.744" endtime="20200407 10:13:49.869"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:50.284" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-449.png"&gt;&lt;img src="selenium-screenshot-449.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:49.870" endtime="20200407 10:13:50.284"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:53.292" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:50.284" endtime="20200407 10:13:53.292"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[title="Proceed to checkout"]</arg>
+</arguments>
+<msg timestamp="20200407 10:13:53.292" level="INFO">Clicking element 'css=a[title="Proceed to checkout"]'.</msg>
+<status status="PASS" starttime="20200407 10:13:53.292" endtime="20200407 10:13:54.796"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:55.163" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-450.png"&gt;&lt;img src="selenium-screenshot-450.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:54.797" endtime="20200407 10:13:55.163"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20200407 10:13:58.196" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20200407 10:13:55.183" endtime="20200407 10:13:58.196"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>id:1_1_0_295884</arg>
+</arguments>
+<msg timestamp="20200407 10:13:58.196" level="INFO">Clicking element 'id:1_1_0_295884'.</msg>
+<status status="PASS" starttime="20200407 10:13:58.196" endtime="20200407 10:13:58.343"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:13:58.682" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-451.png"&gt;&lt;img src="selenium-screenshot-451.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:13:58.344" endtime="20200407 10:13:58.698"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#center_column &gt; p.cart_navigation.clearfix &gt; a.button.btn.btn-default.standard-checkout.button-medium</arg>
+</arguments>
+<msg timestamp="20200407 10:13:58.698" level="INFO">Clicking element 'css=#center_column &gt; p.cart_navigation.clearfix &gt; a.button.btn.btn-default.standard-checkout.button-medium'.</msg>
+<status status="PASS" starttime="20200407 10:13:58.698" endtime="20200407 10:14:00.588"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:00.936" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-452.png"&gt;&lt;img src="selenium-screenshot-452.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:00.589" endtime="20200407 10:14:00.936"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name:processAddress</arg>
+</arguments>
+<msg timestamp="20200407 10:14:00.937" level="INFO">Clicking button 'name:processAddress'.</msg>
+<status status="PASS" starttime="20200407 10:14:00.937" endtime="20200407 10:14:02.372"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:02.752" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-453.png"&gt;&lt;img src="selenium-screenshot-453.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:02.373" endtime="20200407 10:14:02.752"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>css:input[value='1']</arg>
+</arguments>
+<msg timestamp="20200407 10:14:02.753" level="INFO">Selecting checkbox 'css:input[value='1']'.</msg>
+<status status="PASS" starttime="20200407 10:14:02.753" endtime="20200407 10:14:02.896"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:03.233" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-454.png"&gt;&lt;img src="selenium-screenshot-454.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:02.896" endtime="20200407 10:14:03.233"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#form &gt; p &gt; button</arg>
+</arguments>
+<msg timestamp="20200407 10:14:03.233" level="INFO">Clicking element 'css=#form &gt; p &gt; button'.</msg>
+<status status="PASS" starttime="20200407 10:14:03.233" endtime="20200407 10:14:04.785"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:05.159" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-455.png"&gt;&lt;img src="selenium-screenshot-455.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:04.788" endtime="20200407 10:14:05.159"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=a[title="Pay by bank wire"]</arg>
+</arguments>
+<msg timestamp="20200407 10:14:05.160" level="INFO">Clicking element 'css=a[title="Pay by bank wire"]'.</msg>
+<status status="PASS" starttime="20200407 10:14:05.160" endtime="20200407 10:14:06.446"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Bank-wire payment.</arg>
+</arguments>
+<msg timestamp="20200407 10:14:06.486" level="INFO">Current page contains text 'Bank-wire payment.'.</msg>
+<status status="PASS" starttime="20200407 10:14:06.448" endtime="20200407 10:14:06.486"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:06.874" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-456.png"&gt;&lt;img src="selenium-screenshot-456.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:06.487" endtime="20200407 10:14:06.874"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=#cart_navigation &gt; button</arg>
+</arguments>
+<msg timestamp="20200407 10:14:06.876" level="INFO">Clicking element 'css=#cart_navigation &gt; button'.</msg>
+<status status="PASS" starttime="20200407 10:14:06.876" endtime="20200407 10:14:09.138"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Order confirmation</arg>
+</arguments>
+<msg timestamp="20200407 10:14:09.196" level="INFO">Current page contains text 'Order confirmation'.</msg>
+<status status="PASS" starttime="20200407 10:14:09.139" endtime="20200407 10:14:09.196"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200407 10:14:09.535" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-457.png"&gt;&lt;img src="selenium-screenshot-457.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200407 10:14:09.196" endtime="20200407 10:14:09.535"></status>
+</kw>
+<status status="PASS" starttime="20200407 10:12:43.281" endtime="20200407 10:14:09.536" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200407 10:12:42.485" endtime="20200407 10:14:09.540"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Realizar Compra">Realizar Compra</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
